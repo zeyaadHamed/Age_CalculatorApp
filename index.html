@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Age Calculator App</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-offWhite">
+    <main id="age_container" class="bg-white rounded-2xl p-12">
+      <div class="form">
+        <div id="inputs" class="flex gap-6">
+          <div class="form_input">
+            <label>Day</label>
+            <input
+              type="text"
+              name="day"
+              id="day"
+              placeholder="DD"
+              maxlength="2"
+              autocomplete="off"
+              required
+            />
+            <p class="error" id="error_day"></p>
+          </div>
+          <div class="form_input">
+            <label>Month</label>
+            <input
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM"
+              maxlength="2"
+              autocomplete="off"
+              required
+            />
+            <p class="error" id="error_month"></p>
+          </div>
+          <div class="form_input">
+            <label>Year</label>
+            <input
+              type="text"
+              name="year"
+              id="year"
+              placeholder="YYYY"
+              maxlength="4"
+              autocomplete="off"
+              required
+            />
+            <p class="error" id="error_year"></p>
+          </div>
+        </div>
+        <div id="submit_container" class="flex items-center relative">
+          <hr class="w-full h-0 border border-solid border-offWhite" />
+          <button id="submit" class="bg-purpal rounded-full p-5 duration-500 hover:bg-offBlack">
+            <img src="./assets/images/icon-arrow.svg" alt="arrow Icon"class="animate-bottom"/>
+          </button>
+          <span class="absolute click_here">click here</span>
+        </div>
+      </div>
+      <div id="output_form" class="flex flex-col">
+        <div class="output_input">
+          <span class="output_years">--</span>
+          <p>Years</p>
+        </div>
+        <div class="output_input">
+          <span class="output_monhts">--</span>
+          <p>Months</p>
+        </div>
+        <div class="output_input">
+          <span class="output_days">--</span>
+          <p>Days</p>
+        </div>
+        <hr class="my-5">
+        <div class="output_input">
+          <span class="output_birthday_days">--</span>
+          <p class="left_BD">Left BirthDay</p>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/main/script.js"></script>
+  </body>
+</html>
